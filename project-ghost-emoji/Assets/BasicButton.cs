@@ -9,15 +9,31 @@ public class BasicButton : MonoBehaviour
         textToChange.text = textone;
         Debug.Log("it got even farther"+ textToChange.text);
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+
+
+
+    // This is a new method made for the field trip
+    public int newFontSize;
+    public string[] textEntries; 
+    private int currentEntry;
+
+    
+    private void Start()
     {
-        
+        textToChange.text = textEntries[0];
+        textToChange.fontSize = newFontSize;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Advance()
     {
+
+        currentEntry = currentEntry + 1;
         
+
+        textToChange.text = textEntries[currentEntry];
+
+
     }
+    
 }

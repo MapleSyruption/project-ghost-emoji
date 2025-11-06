@@ -780,7 +780,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 993842364}
         m_TargetAssemblyTypeName: BasicButton, Assembly-CSharp
-        m_MethodName: Display
+        m_MethodName: Advance
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -842,6 +842,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   textone: Bye
   textToChange: {fileID: 1691242531}
+  newFontSize: 10
+  textEntries:
+  - Hickory Dickory dock
+  - The mouse ran up the clock
+  - The clock struck one
+  - The mouse ran down
+  - Hickory Dickory dock
 --- !u!1 &1566135382
 GameObject:
   m_ObjectHideFlags: 0
