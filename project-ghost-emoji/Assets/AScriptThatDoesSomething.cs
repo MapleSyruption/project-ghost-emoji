@@ -20,10 +20,11 @@ public class AScriptThatDoesSomething : MonoBehaviour
     {
         if (isBlue == false)
         {
-            text.color = Color.blue;
-        } else
-        {
             text.color = Color.red;
+        } 
+        else 
+        {
+            text.color = Color.blue;
         }
         
     }
