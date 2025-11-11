@@ -16,24 +16,47 @@ public class BasicButton : MonoBehaviour
     // This is a new method made for the field trip
     public int newFontSize;
     public string[] textEntries; 
-    private int currentEntry;
+    public int currentEntry;
 
     
     private void Start()
     {
         textToChange.text = textEntries[0];
         textToChange.fontSize = newFontSize;
+
+
+        currentEntry = 4;
     }
 
     public void Advance()
     {
-
+        
         currentEntry = currentEntry + 1;
+
+        if (currentEntry > 4)
+        {
+            currentEntry = 0;
+        }
         
 
         textToChange.text = textEntries[currentEntry];
 
 
     }
-    
+
+    public void Backwards()
+    {
+
+        currentEntry = currentEntry - 1;
+        if (currentEntry < 0)
+        {
+            currentEntry = 4;
+        }
+
+
+        textToChange.text = textEntries[currentEntry];
+
+
+    }
+
 }
