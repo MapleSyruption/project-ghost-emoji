@@ -13,12 +13,12 @@ public class BasicButton : MonoBehaviour
 
 
 
-    // This is a new method made for the field trip
     public int newFontSize;
     public string[] textEntries; 
     public int currentEntry;
 
     
+    // Can you make it so this method adapts to any size list
     private void Start()
     {
         textToChange.text = textEntries[0];
