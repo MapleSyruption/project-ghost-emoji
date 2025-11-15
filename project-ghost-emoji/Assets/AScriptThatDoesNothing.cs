@@ -19,8 +19,8 @@ public class AScriptThatDoesNothing : MonoBehaviour
     void Update()
     {
      if (mostofwhateverIwant == true) {
-Debug.Log("whatever I want");
-     Debug.Log(moreofwhateverIwant);
+            Debug.Log("whatever I want");
+            Debug.Log(moreofwhateverIwant);
 
      }  
    
