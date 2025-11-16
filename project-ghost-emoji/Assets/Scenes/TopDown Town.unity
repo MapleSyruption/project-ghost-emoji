@@ -282,6 +282,10 @@ PrefabInstance:
       value: House 3
       objectReference: {fileID: 0}
     - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
+      propertyPath: personPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: waitTimeBeforeSpawning
       value: 4
       objectReference: {fileID: 0}
@@ -1367,7 +1371,7 @@ PrefabInstance:
     - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: personPrefab
       value: 
-      objectReference: {fileID: 957705432312616564, guid: 3031f066e51c7204c9c33f79df7c9359, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: waitTimeBeforeSpawning
       value: 6.4
@@ -3440,6 +3444,10 @@ PrefabInstance:
     - target: {fileID: 794566150852738400, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: m_Name
       value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
+      propertyPath: personPrefab
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: waitTimeBeforeSpawning
