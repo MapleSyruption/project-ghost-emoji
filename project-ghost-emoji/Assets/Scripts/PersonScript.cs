@@ -41,9 +41,10 @@ public class PersonScript : MonoBehaviour
 
 
 
-
-    // rename this script once you understand what it does.
-    // Casual english please
+    /// <summary>
+    /// rename this script once you understand what it does.
+    /// Whatever feels most accurate please.
+    /// </summary>
     private void DoTheThingIWantYouToDo()
     {
         int randomNumber = Random.Range(0, 6);
@@ -51,34 +52,34 @@ public class PersonScript : MonoBehaviour
         if (randomNumber == 0)
         {
             myFullName = "Yellow Yasmine";
-            myNameTag.GetComponent<NameTag>().SetText(myFullName, Color.yellow);
+            myNameTag.GetComponent<NameTag>().ModifyText(myFullName);
         }
         else if (randomNumber == 1)
         {
             myFullName = "Red Randy";
-            myNameTag.GetComponent<NameTag>().SetText(myFullName, Color.red);
+            myNameTag.GetComponent<NameTag>().ModifyText(myFullName);
         }
         else if (randomNumber == 2)
         {
             myFullName = "Blue Bart";
-            myNameTag.GetComponent<NameTag>().SetText(myFullName, Color.lightBlue);
+            myNameTag.GetComponent<NameTag>().ModifyText(myFullName);
 
         }
         else if (randomNumber == 3)
         {
             myFullName = "Green Gump";
-            myNameTag.GetComponent<NameTag>().SetText(myFullName, Color.forestGreen);
+            myNameTag.GetComponent<NameTag>().ModifyText(myFullName);
         }
         else if (randomNumber == 4)
         {
             myFullName = "Orange Angie";
-            myNameTag.GetComponent<NameTag>().SetText(myFullName, Color.orangeRed);
+            myNameTag.GetComponent<NameTag>().ModifyText(myFullName);
 
         }
         else if (randomNumber == 5)
         {
             myFullName = "Purple Paul";
-            myNameTag.GetComponent<NameTag>().SetText(myFullName, Color.rebeccaPurple);
+            myNameTag.GetComponent<NameTag>().ModifyText(myFullName);
         }
 
         float randomWalkingSpeed = Random.Range(1f, 10f);
@@ -86,21 +87,25 @@ public class PersonScript : MonoBehaviour
     }
 
 
-    // rename this script once you understand what it does.
-    // Casual english please
+    /// <summary>
+    /// rename this script once you understand what it does.
+    /// Whatever feels most accurate please.
+    /// </summary>
     void DoAnotherThingIfImBeingHonest()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, transform.position.y, 0), walkingSpeed / 600f);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 0, 0), walkingSpeed / 600f);
 
-        if (Vector3.Distance(transform.position, new Vector3(0, transform.position.y, 0)) < .01f)
+        if (Vector3.Distance(transform.position, new Vector3(0, 0, 0)) < .01f)
         {
             Destroy(this.gameObject);
         }
     }
 
 
-    // rename this script once you understand what it does.
-    // Whatever feels most accurate please
+    /// <summary>
+    /// rename this script once you understand what it does.
+    /// Whatever feels most accurate please.
+    /// </summary>
     public string GetSomeRandomInformationIDKReally()
     {
         return myFullName;
