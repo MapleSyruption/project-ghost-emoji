@@ -95,7 +95,7 @@ public class PersonScript : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 0, 0), walkingSpeed / 600f);
 
-        if (Vector3.Distance(transform.position, new Vector3(0, 0, 0)) < .01f)
+        if (Vector3.Distance(transform.position, new Vector3(0, 0, 0)) < .7f)
         {
             Destroy(this.gameObject);
         }
