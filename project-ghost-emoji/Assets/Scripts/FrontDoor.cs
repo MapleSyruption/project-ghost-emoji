@@ -13,7 +13,7 @@ public class FrontDoor : MonoBehaviour
 
     void Update()
     {
-        timeElapsed += Time.deltaTime;
+        timeElapsed = timeElapsed + Time.deltaTime;
 
         if (timeElapsed > waitTimeBeforeSpawning)
         {
