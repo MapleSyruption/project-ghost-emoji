@@ -4,8 +4,6 @@ public class CreateNewProfiles : MonoBehaviour
 {
     public GameObject Profile1;
 
-    public bool Canvas;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
