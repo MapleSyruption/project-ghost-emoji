@@ -3,29 +3,14 @@ using UnityEngine;
 public class CreateNewProfiles : MonoBehaviour
 {
     public GameObject Profile1;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        Debug.Log(Profile1);
-        //this script creates new profiles
-        Debug.Log("why isnt this button creating a new profile");
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject screenOne;
+    public GameObject screenTwo;
 
     public void CreateNewProfileFromPrefab()
     {
-        Debug.Log(Profile1);
-        //this script creates new profiles
-        Debug.Log("really why");
 
-    Object.Instantiate(Profile1, ProfileGrouping.transform);
+        var newProfile = Instantiate(Profile1, ProfileGrouping.transform);
+        newProfile.GetComponent<GoToProfile>().SetScreensOneAndTwo(screenOne, screenTwo);
     
     }
 

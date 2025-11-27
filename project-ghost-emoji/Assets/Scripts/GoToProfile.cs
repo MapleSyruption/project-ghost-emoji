@@ -2,24 +2,28 @@ using UnityEngine;
 
 public class GoToProfile : MonoBehaviour
 {
-    public GameObject screen1;
-    public GameObject screen2;
+    public TMPro.TextMeshProUGUI nameText;
+    public string userName;
+    public float height;
+    public string bio;
+    private GameObject screen1;
+    private GameObject screen2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Startle()
     {
-        Debug.Log(screen1);
-        //this method turns screen1 off
-        Debug.Log("screen1 should be turning off now");
         screen1.SetActive(false);
-        if (screen1.activeSelf == false) 
-        { screen2.SetActive(true); 
-        }
+        screen2.SetActive(true);
+        screen2.GetComponent<UmngYeah>().UpdateText(userName, height, bio);
 
     }
-
-    // Update is called once per frame
-    void Update()
+    public void SetScreensOneAndTwo(GameObject screenOne, GameObject screenTwo)
     {
-        
+        screen1 = screenOne;
+        screen2 = screenTwo;
+    }
+    private void Update()
+    {
+        gameObject.name = userName + "(GameObject)";
+        nameText.text = userName;
     }
 }
