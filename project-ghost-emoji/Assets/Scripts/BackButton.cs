@@ -10,14 +10,14 @@ public class BackButton : MonoBehaviour
     public void BackButton_Display () 
     { 
         Debug.Log(screen1);
-        //this method turns screen1 off
+        //this method turns screen1 on
         Debug.Log("screen1 should be turning on now");
-        screen1.SetActive(true);
-        if (screen1.activeSelf == true)
         {
+            screen1.SetActive(true);
             screen2.SetActive(false);
         }
-
+  
+      
     }
 
     // Update is called once per frame
