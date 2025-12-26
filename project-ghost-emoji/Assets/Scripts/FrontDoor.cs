@@ -4,14 +4,17 @@ public class FrontDoor : MonoBehaviour
 {
     public GameObject personPrefab;
     public float waitTimeBeforeSpawning;
-    private float timeElapsed;
+    public float timeElapsed;
 
-    private void Start()
+    public void SpawnAPerson()
     {
+        GameObject personToSpawn = Instantiate(personPrefab, transform);
+        personToSpawn.transform.parent = null;
+        personToSpawn.transform.localScale = new Vector3(.5f, .5f, .5f);
         timeElapsed = 0f;
     }
 
-    void Update()
+    public void Update()
     {
         timeElapsed = timeElapsed + Time.deltaTime;
 
@@ -19,14 +22,6 @@ public class FrontDoor : MonoBehaviour
         {
             SpawnAPerson();
         }
-       
 
-    }
-
-    void SpawnAPerson()
-    {
-        GameObject personToSpawn = Instantiate(personPrefab, this.transform);
-        personToSpawn.transform.parent = null;
-        personToSpawn.transform.localScale = new Vector3(.5f, .5f, .5f);
     }
 }
