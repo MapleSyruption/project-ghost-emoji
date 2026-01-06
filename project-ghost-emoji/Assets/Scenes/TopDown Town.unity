@@ -282,8 +282,12 @@ PrefabInstance:
       value: House 3
       objectReference: {fileID: 0}
     - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
+      propertyPath: personPrefab
+      value: 
+      objectReference: {fileID: 957705432312616564, guid: 3031f066e51c7204c9c33f79df7c9359, type: 3}
+    - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: waitTimeBeforeSpawning
-      value: 4
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5128120706555906218, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1365,8 +1369,12 @@ PrefabInstance:
       value: House 2
       objectReference: {fileID: 0}
     - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
+      propertyPath: personPrefab
+      value: 
+      objectReference: {fileID: 957705432312616564, guid: 3031f066e51c7204c9c33f79df7c9359, type: 3}
+    - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: waitTimeBeforeSpawning
-      value: 6.4
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5128120706555906218, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3438,8 +3446,16 @@ PrefabInstance:
       value: House
       objectReference: {fileID: 0}
     - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
+      propertyPath: timeElapsed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
+      propertyPath: personPrefab
+      value: 
+      objectReference: {fileID: 957705432312616564, guid: 3031f066e51c7204c9c33f79df7c9359, type: 3}
+    - target: {fileID: 1788850351654745623, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: waitTimeBeforeSpawning
-      value: 7.39
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5128120706555906218, guid: 3323b83d076d1f04aaca846144c5ed0c, type: 3}
       propertyPath: m_LocalPosition.x
