@@ -905,6 +905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Profile1: {fileID: 1525665256980229276, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
+  Screen1: {fileID: 0}
+  Screen2: {fileID: 0}
   ProfileGrouping: {fileID: 984911994}
 --- !u!114 &1350111757
 MonoBehaviour:
@@ -1435,6 +1437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Profile1: {fileID: 1525665256980229276, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
+  Screen1: {fileID: 1152137233}
+  Screen2: {fileID: 1510294635}
   ProfileGrouping: {fileID: 1989836024}
 --- !u!114 &1947232874
 MonoBehaviour:
@@ -1944,78 +1948,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4775020439837328706, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775020439837328706, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775020439837328706, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 4959252308610788872, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
+      propertyPath: screen1
       value: 
-      objectReference: {fileID: 8923311299379714968}
-    - target: {fileID: 4775020439837328706, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775020439837328706, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BackButton_Display
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775020439837328706, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ProfileButtontoProfilePage, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775020439837328706, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1152137233}
+    - target: {fileID: 4959252308610788872, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
+      propertyPath: screen2
+      value: 
+      objectReference: {fileID: 1510294635}
+    - target: {fileID: 7545343842972069943, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
+      propertyPath: screen1
+      value: 
+      objectReference: {fileID: 1152137233}
+    - target: {fileID: 7545343842972069943, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
+      propertyPath: screen2
+      value: 
+      objectReference: {fileID: 1510294635}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1525665256980229276, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8923311299379714968}
-    - targetCorrespondingSourceObject: {fileID: 1525665256980229276, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8923311299379714964}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
---- !u!1 &8923311299379714963 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1525665256980229276, guid: 3a8eb187dde6acb4384bff3dee419e83, type: 3}
-  m_PrefabInstance: {fileID: 8923311299379714962}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8923311299379714964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8923311299379714963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5153d9f6b44b15f4fb2a5f04d8b9a49c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  screen1: {fileID: 1152137233}
-  screen2: {fileID: 1510294635}
---- !u!114 &8923311299379714968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8923311299379714963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebb832a9976b1454695ba009e8317b26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ProfileButtontoProfilePage
-  screen1: {fileID: 1152137233}
-  screen2: {fileID: 1510294635}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

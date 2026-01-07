@@ -18,4 +18,10 @@ public class ProfileButtontoProfilePage : MonoBehaviour
         //this method turns screen1 on
         Debug.LogError("screen1 should be turning on now - end");
     }
+
+    public void SetSpecificScreen(GameObject firstScreen, GameObject secondScreen)
+    { screen1 = firstScreen; screen2 = secondScreen;
+            
+            }
 }
+
